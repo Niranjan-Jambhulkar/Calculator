@@ -45,3 +45,26 @@ void Subtraction(){
     printf("Sum is: %d\n", sum);
     
 }
+
+void Multiplication();
+void Multiplication(){
+    int sum=1,temp;
+    int Mul[20];
+    printf("\nEnter 0 to print result\n");
+    for (int i = 0; i < 20; i++)
+    {
+        printf("Enter Number: ");
+        scanf("%d", &Mul[i]);
+        if (Mul[i]==0)
+        {
+            temp = i;
+            break;
+        }
+    }
+
+    for (int i = 0; i < temp; i++)
+    {
+        sum= sum * Mul[i];
+    }
+    printf("Sum is: %d\n", sum);
+}
