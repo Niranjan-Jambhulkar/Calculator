@@ -3,6 +3,7 @@ void Addition();
 void Addition(){
     int sum=0,temp;
     int Add[20];
+    printf("\nEnter 0 to print result\n");
     for (int i = 0; i < 20; i++)
     {
         printf("Enter Number: ");
@@ -18,6 +19,6 @@ void Addition(){
     {
         sum = sum + Add[i];
     }
-    printf("Sum is: %d", sum);
+    printf("Sum is: %d\n\n", sum);
     
 }
