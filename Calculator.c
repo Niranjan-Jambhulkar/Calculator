@@ -4,7 +4,7 @@
 int main()
 {
     int selection;
-    printf("\n1. Addition\n2. Subtraction\n3. Multiplication\n");
+    printf("\n1. Addition\n2. Subtraction\n3. Multiplication\n4. Divide\n");
     printf("Select option: ");
     scanf("%d", &selection);
     switch (selection)
@@ -21,6 +21,11 @@ int main()
     
     case 3:
         Multiplication();
+        main();
+        break;
+
+    case 4:
+        Divide();
         main();
         break;
 
